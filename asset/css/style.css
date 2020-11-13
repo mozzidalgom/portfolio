@@ -445,6 +445,7 @@ h1 + small {
 }
 .career_container ul li {
 	margin-top: 6vw;
+	font-family: 'NanumSquare';
 	font-size: 3.14vw;
 	font-weight: 100;
 	line-height: 2;
@@ -612,6 +613,7 @@ h1 + small {
 .section03 .layout_center > p {
 	margin-top: 2em;
 	font-size: 3.7vw;
+	line-height: 1.6;
 }
 .section03 .layout_center > p em {
 	font-weight: 800;
