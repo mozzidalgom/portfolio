@@ -1,13 +1,20 @@
 /*** Layout ***/
+
 /* 
 Mobile First Design
-@media screen and (min-width: 768px) { Tablet start}
+@media screen and (min-width: $tabletStart) { Tablet start}
 @media screen and (min-width: 1024px) { Laptop, Desktop  start} 
 @media screen and (min-width: 1200px) { Section03 Desktop control} 
 */
-@media screen and (min-width: 1024px) {
+$tabletStart: 768px;
+$desktopStart: 1024px;
+
+
+
+
+@media screen and (min-width: $desktopStart) {
 	.layout_center {
-		width: 1024px;
+		width: $desktopStart;
 		margin: 0 auto;
 	}
 } 
@@ -24,7 +31,8 @@ section {
 	width: 100%;
 	height: 100vh;
 	max-height: 1024px;
-	background-color: #191e3b;
+	background: url('../img/section01_bg.jpg') center top no-repeat;
+	background-size: 100%;
   color: #fff;
   
   .layout_center {
@@ -39,7 +47,7 @@ section {
 	left: 10vw;
 	z-index: 5;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.title_contaienr {
 		top: 245px;
 		left: 10%;
@@ -96,13 +104,13 @@ h1 {
 }
 
 .section01 {
-  & .img_conatainer {
+  .img_conatainer {
     position: absolute;
     top: 45%;
     left: 50%;
     width: 50%;
   }
-  & .img_conatainer img {
+  .img_conatainer img {
     width: 100%
   }
 }
@@ -118,12 +126,12 @@ h1 {
 }
 @media screen and (min-width: 1024px) {
   .section01 {
-    & .img_conatainer {
+    .img_conatainer {
       top: 0;
       left: 40%;
       bottom: 0;
     }
-    & .img_conatainer img {
+    .img_conatainer img {
       width: auto;
       height: 100%;
     }
@@ -164,7 +172,7 @@ h1 {
 	background-size: 100%;
 	color: #8194c2;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.section02 {
 		position: relative;
 		padding: 700px 0 100px;
@@ -197,7 +205,7 @@ h1 {
 	margin-left: 21.11vw;
 	padding-top: 10vw; 
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.strength li {
 		position: absolute;
 		margin: 0 !important;
@@ -285,7 +293,7 @@ h1 {
 	border: 1px solid #009cff;
 	box-sizing: border-box;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.strength li > span:empty::before {
 		width: 16px;
 		height: 16px;
@@ -312,7 +320,7 @@ h1 {
 .strength li p span {
 	color: #fff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.strength li > em {
 		font-size: 16px;
 	}
@@ -334,12 +342,12 @@ h1 {
 	padding: 10vw 7vw;
 	box-sizing: border-box;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.career_container {
 		margin-top: 0;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: $tabletStart) and (max-width: 1023px) {
 	.career_container {
 		position: relative;
 		left: 50%;
@@ -402,7 +410,7 @@ h1 {
 	font-size: 7vw;
 	color: #009cff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.box_title {
 		width: 203px;
 		padding: 16px 0;
@@ -464,7 +472,7 @@ h1 {
 .career_container ul li span {
 	display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.career_container > p {
 		position: relative;
 		font-size: 16px;
@@ -544,7 +552,7 @@ h1 {
 	height: 11vw;
 	max-height: 55px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.skills {
 		margin-top: 50px;
 	}
@@ -596,7 +604,7 @@ h1 {
 	transform: rotate(-45deg);
 	transform-origin: top right;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.section03 {
 		padding: 150px 40px 100px;
 	}
@@ -629,7 +637,7 @@ h1 {
 .section03 .layout_center > p em {
 	font-weight: 800;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.section03 .layout_center {
 		position: relative;
 		width: auto;
@@ -736,7 +744,7 @@ h1 {
 .section03 .bg_container .line_3 {
 	display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.section03 .bg_container {
 		right: 0;
 		bottom: 0;
@@ -804,7 +812,7 @@ h1 {
 	width: 84%;
 	margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.list_project li {
 		padding: 100px 0;
 	}
@@ -868,7 +876,7 @@ h1 {
 	align-items: center; */
 	margin-bottom: 10vw;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.list_project .box_title {
 		margin-bottom: 50px;
 	}
@@ -907,7 +915,7 @@ h1 {
 .project_tit_box .contribution + div {
 	margin-left: 3vw;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.project_tit_box .contribution {
 		width: 108px;
 		height: 108px;
@@ -953,7 +961,7 @@ h1 {
 	left: 50%;
 	transform: translateX(-48%);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.list_project .preview_group,
 	.list_project .prview {
 		position: absolute;
@@ -1082,7 +1090,7 @@ h1 {
 	width: 7vw;
 	height: 7vw;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tabletStart) {
 	.last_section h2 {
 		font-size: 30px;
 	}

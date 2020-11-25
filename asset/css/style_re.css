@@ -1,7 +1,7 @@
 /*** Layout ***/
 /* 
 Mobile First Design
-@media screen and (min-width: 768px) { Tablet start}
+@media screen and (min-width: $tabletStart) { Tablet start}
 @media screen and (min-width: 1024px) { Laptop, Desktop  start} 
 @media screen and (min-width: 1200px) { Section03 Desktop control} 
 */
@@ -22,7 +22,8 @@ section {
   width: 100%;
   height: 100vh;
   max-height: 1024px;
-  background-color: #191e3b;
+  background: url("../img/section01_bg.jpg") center top no-repeat;
+  background-size: 100%;
   color: #fff;
 }
 
