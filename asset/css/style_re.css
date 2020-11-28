@@ -180,13 +180,6 @@ h1 + small {
   width: 85vw;
 }
 
-.section01 .bg_container .left_tree {
-  position: absolute;
-  bottom: -1vw;
-  left: -42vw;
-  height: 33vw;
-}
-
 @media screen and (min-width: 1024px) {
   .section01 .bg_container .moon {
     left: 50%;
@@ -195,6 +188,16 @@ h1 + small {
     top: 40px;
     width: 540px;
   }
+}
+
+.section01 .bg_container .left_tree {
+  position: absolute;
+  bottom: -1vw;
+  left: -42vw;
+  height: 33vw;
+}
+
+@media screen and (min-width: 1024px) {
   .section01 .bg_container .left_tree {
     bottom: -1vw;
     left: -42vw;

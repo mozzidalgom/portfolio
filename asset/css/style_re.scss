@@ -37,34 +37,29 @@ section {
 	.layout_center {
 		height: 147vw;
 	}
-}
-@media screen and (min-width: $desktopStart) {
-	.section01 {
+	@media screen and (min-width: $desktopStart) {
 		background-image: url('../img/section01_bg_pc.jpg');
 		background-size: auto;
+
 		.layout_center {
 			height: 834px;
 		}
 	}
-}
-@media screen and (min-width: 2000px) {
-	.section01 {
+	@media screen and (min-width: 2000px) {
 		background-size: cover;
 	}
 }
+
 .title_contaienr {
 	position: relative;
 	top: 23%;
 	left: 10vw;
 	z-index: 5;
-}
-@media screen and (min-width: $tabletStart) {
-	.title_contaienr {
+	@media screen and (min-width: $tabletStart) {
 		top: 245px;
 		left: 5%;
 	}
 }
-
 
 h1 {
 	& > small {
@@ -91,9 +86,7 @@ h1 {
 		color: #fff;
 		opacity: 0.9;
 	}
-}
-@media screen and (min-width: $desktopStart) {
-	h1 {
+	@media screen and (min-width: $desktopStart) {
 		br:nth-of-type(2) {
 			display: none;
 		}
@@ -112,7 +105,6 @@ h1 {
 			margin-top: 0.5em;
 			font-size: 28px;
 		}
-
 	}
 }
 
@@ -126,9 +118,7 @@ h1 {
 		img {
 			width: 100%
 		}
-	}
-	@media screen and (min-width: $desktopStart) {
-		.img_conatainer {
+		@media screen and (min-width: $desktopStart) {
 			top: 0;
 			left: 50%;
 			bottom: 0;
@@ -141,7 +131,6 @@ h1 {
 			}
 		}
 	}
-
 	@media screen and (min-width: $desktopStart) {
 		.small_img {
 			display: none !important;
@@ -153,8 +142,6 @@ h1 {
 		}
 	}
 
-	
-
 	.right_msg {
 		position: absolute;
 		top: 84vw;
@@ -165,32 +152,42 @@ h1 {
 		color: #8194c2;
 		transform: rotate(90deg);
 		transform-origin: top right;
-	}
-	@media screen and (min-width: $desktopStart) {
-		.right_msg {
-			top: 70%;
-			font-size: 13px;
+		@media screen and (min-width: $desktopStart) {
+				top: 70%;
+				font-size: 13px;
 		}
 	}
+}
 
-
+.section01 {
 	.bg_container {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		width: 100%;
-
+	
 		.moon {
 			position: absolute;
 			left: -12vw;
 			top: 8vw;
 			width: 85vw;
+			@media screen and (min-width: $desktopStart) {
+				left: 50%;
+				transform: translateX(-630px);
+				top: 40px;
+				width: 540px;
+			}
 		}
 		.left_tree {
 			position: absolute;
 			bottom: -1vw;
 			left: -42vw;
 			height: 33vw;
+			@media screen and (min-width: $desktopStart) {
+				bottom: -1vw;
+				left: -42vw;
+				height: 33vw;
+			}
 		}
 		// .petal01 {
 		// 	position: absolute;
@@ -204,32 +201,10 @@ h1 {
 		// 	right: 9vw;
 		// 	width: 9.629vw;
 		// }
-		
-	}
-}
-
-@media screen and (min-width: $desktopStart) {
-	.section01 {
-		
-
-		.bg_container {
-			.moon {
-				left: 50%;
-				transform: translateX(-630px);
-				top: 40px;
-				width: 540px;
-			}
-			.left_tree {
-				bottom: -1vw;
-				left: -42vw;
-				height: 33vw;
-			}
-		}
-
-
 
 	}
 }
+
 
 
 
