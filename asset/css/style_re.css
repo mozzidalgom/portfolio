@@ -119,6 +119,53 @@ h1 + small {
   width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  .section01 .img_conatainer {
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: auto;
+  }
+  .section01 .img_conatainer img {
+    width: auto;
+    height: 110%;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section01 .small_img {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .section01 .big_img {
+    display: none !important;
+  }
+}
+
+.section01 .right_msg {
+  position: absolute;
+  top: 84vw;
+  right: 5vw;
+  font-size: 2.59vw;
+  font-weight: 100;
+  letter-spacing: 0.4em;
+  color: #8194c2;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+@media screen and (min-width: 1024px) {
+  .section01 .right_msg {
+    top: 70%;
+    font-size: 13px;
+  }
+}
+
 .section01 .bg_container {
   position: absolute;
   top: 0;
@@ -141,29 +188,6 @@ h1 + small {
 }
 
 @media screen and (min-width: 1024px) {
-  .small_img {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .big_img {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section01 .img_conatainer {
-    top: 0;
-    left: 50%;
-    bottom: 0;
-    width: auto;
-  }
-  .section01 .img_conatainer img {
-    width: auto;
-    height: 110%;
-    margin-top: -20px;
-  }
   .section01 .bg_container .moon {
     left: 50%;
     -webkit-transform: translateX(-630px);
@@ -175,27 +199,6 @@ h1 + small {
     bottom: -1vw;
     left: -42vw;
     height: 33vw;
-  }
-}
-
-.section01 .right_msg {
-  position: absolute;
-  top: 84vw;
-  right: 5vw;
-  font-size: 2.59vw;
-  font-weight: 100;
-  letter-spacing: 0.4em;
-  color: #8194c2;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-}
-
-@media screen and (min-width: 1024px) {
-  .section01 .right_msg {
-    top: 70%;
-    font-size: 13px;
   }
 }
 

@@ -127,6 +127,53 @@ h1 {
 			width: 100%
 		}
 	}
+	@media screen and (min-width: $desktopStart) {
+		.img_conatainer {
+			top: 0;
+			left: 50%;
+			bottom: 0;
+			width: auto;
+
+			img {
+				width: auto;
+				height: 110%;
+				margin-top: -20px;
+			}
+		}
+	}
+
+	@media screen and (min-width: $desktopStart) {
+		.small_img {
+			display: none !important;
+		}
+	}
+	@media screen and (max-width: 1023px) {
+		.big_img {
+			display: none !important;
+		}
+	}
+
+	
+
+	.right_msg {
+		position: absolute;
+		top: 84vw;
+		right: 5vw;
+		font-size: 2.59vw;
+		font-weight: 100;
+		letter-spacing: 0.4em;
+		color: #8194c2;
+		transform: rotate(90deg);
+		transform-origin: top right;
+	}
+	@media screen and (min-width: $desktopStart) {
+		.right_msg {
+			top: 70%;
+			font-size: 13px;
+		}
+	}
+
+
 	.bg_container {
 		position: absolute;
 		top: 0;
@@ -160,30 +207,10 @@ h1 {
 		
 	}
 }
-@media screen and (min-width: $desktopStart) {
-	.small_img {
-		display: none !important;
-	}
-}
-@media screen and (max-width: 1023px) {
-	.big_img {
-		display: none !important;
-	}
-}
+
 @media screen and (min-width: $desktopStart) {
 	.section01 {
-		.img_conatainer {
-			top: 0;
-			left: 50%;
-			bottom: 0;
-			width: auto;
-
-			img {
-				width: auto;
-				height: 110%;
-				margin-top: -20px;
-			}
-		}
+		
 
 		.bg_container {
 			.moon {
@@ -197,16 +224,6 @@ h1 {
 				left: -42vw;
 				height: 33vw;
 			}
-			// .petal01 {
-			// 	top: 32vw;
-			// 	left: 0;
-			// 	width: 21vw;
-			// }
-			// .petal02 {
-			// 	bottom: 5vw;
-			// 	right: 9vw;
-			// 	width: 9.629vw;
-			// }
 		}
 
 
@@ -214,23 +231,7 @@ h1 {
 	}
 }
 
-.section01 .right_msg {
-	position: absolute;
-	top: 84vw;
-	right: 5vw;
-	font-size: 2.59vw;
-	font-weight: 100;
-	letter-spacing: 0.4em;
-	color: #8194c2;
-	transform: rotate(90deg);
-	transform-origin: top right;
-}
-@media screen and (min-width: $desktopStart) {
-	.section01 .right_msg {
-		top: 70%;
-		font-size: 13px;
-	}
-}
+
 
 
 
