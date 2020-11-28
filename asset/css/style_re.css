@@ -402,7 +402,7 @@ h1 + small {
   display: block;
   height: 51.94vw;
   width: 1px;
-  background-color: #009cff;
+  background-color: #b799cf;
 }
 
 .strength li > span:empty::before {
@@ -415,7 +415,7 @@ h1 + small {
   width: 2.6vw;
   height: 2.6vw;
   border-radius: 50%;
-  border: 1px solid #009cff;
+  border: 1px solid #b799cf;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -434,7 +434,7 @@ h1 + small {
   line-height: 3;
   font-size: 3.8vw;
   font-weight: 900;
-  color: #fff;
+  color: #a87bc7;
   letter-spacing: 0.1em;
 }
 
@@ -443,11 +443,7 @@ h1 + small {
   font-size: 4.07vw;
   font-weight: 100;
   letter-spacing: 0.6em;
-  color: #868ea3;
-}
-
-.strength li p span {
-  color: #fff;
+  color: #475066;
 }
 
 @media screen and (min-width: 768px) {
@@ -507,19 +503,18 @@ h1 + small {
   display: block;
   width: 45%;
   padding: 4vw 0;
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-left: 2px solid #7e5b96;
+  border-bottom: 2px solid #7e5b96;
   font-size: 4.62vw;
   font-weight: 900;
   letter-spacing: 0.1em;
-  color: #fff;
+  color: #7e5b96;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.box_title::before,
-.box_title::after {
+.box_title::before, .box_title::after {
   content: '';
   position: absolute;
 }
@@ -529,7 +524,7 @@ h1 + small {
   left: -1px;
   height: 0;
   width: 8vw;
-  border-top: 2px solid #fff;
+  border-top: 2px solid #7e5b96;
 }
 
 .box_title::after {
@@ -537,7 +532,7 @@ h1 + small {
   right: 0;
   height: 5vw;
   width: 0;
-  border-right: 2px solid #fff;
+  border-right: 2px solid #7e5b96;
 }
 
 .box_title span::after {
@@ -546,7 +541,7 @@ h1 + small {
   top: -0.5em;
   right: 0.1em;
   font-size: 7vw;
-  color: #009cff;
+  color: #7e5b96;
 }
 
 @media screen and (min-width: 768px) {
@@ -577,14 +572,15 @@ h1 + small {
   /* font-weight: 500; */
   letter-spacing: 0.4em;
   line-height: 2;
-  color: #fff;
+  color: #475066;
 }
 
 .career_container > p span {
   display: block;
-  color: #8194c2;
-  font-size: 2.77vw;
+  color: #7f5c97;
+  font-size: 2.6vw;
   font-weight: 100;
+  white-space: nowrap;
 }
 
 .career_container > p small {
@@ -599,15 +595,20 @@ h1 + small {
   margin-bottom: 10vw;
   font-size: 4.44vw;
   font-weight: 700;
-  color: #fff;
+  color: #7f5c97;
+}
+
+.career_container > span em {
+  color: #475066;
 }
 
 .career_container ul li {
   margin-top: 6vw;
   font-family: 'NanumSquare';
-  font-size: 3.14vw;
+  font-size: 3.3vw;
   font-weight: 100;
   line-height: 2;
+  color: #475066;
 }
 
 .career_container ul li span {

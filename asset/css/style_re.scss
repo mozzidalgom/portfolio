@@ -373,7 +373,7 @@ h1 {
 	display: block;
 	height: 51.94vw;
 	width: 1px;
-	background-color: #009cff;
+	background-color: #b799cf;
 	&::before {
 		content: '';
 		position: absolute;
@@ -383,7 +383,7 @@ h1 {
 		width: 2.6vw;
 		height: 2.6vw;
 		border-radius: 50%;
-		border: 1px solid #009cff;
+		border: 1px solid #b799cf;
 		box-sizing: border-box;
 
 		@media screen and (min-width: $tabletStart) {
@@ -400,7 +400,7 @@ h1 {
 		line-height: 3;
 		font-size: 3.8vw;
 		font-weight: 900;
-		color: #fff;
+		color: #a87bc7;
 		letter-spacing: 0.1em;
 	}
 	& p {
@@ -408,11 +408,11 @@ h1 {
 		font-size: 4.07vw;
 		font-weight: 100;
 		letter-spacing: 0.6em;
-		color: #868ea3;
+		color: #475066;
 	}
-	& p span {
-		color: #fff;
-	}
+	// & p span {
+	// 	color: #fff;
+	// }
 }
 @media screen and (min-width: $tabletStart) {
 	.strength li > em {
@@ -464,45 +464,47 @@ h1 {
 
 
 .box_title {
+	$color: #7e5b96;
 	position: relative;
 	display: block;
 	width: 45%;
 	padding: 4vw 0;
-	border-left: 2px solid #fff;
-	border-bottom: 2px solid #fff;
+	border-left: 2px solid $color;
+	border-bottom: 2px solid $color;
 	font-size: 4.62vw;
 	font-weight: 900;
 	letter-spacing: 0.1em;
-	color: #fff;
+	color: $color;
 	text-align: center;
 	box-sizing: border-box;
-}
-.box_title::before,
-.box_title::after {
-	content: '';
-	position: absolute;
-}
-.box_title::before {
-	top: 0;
-	left: -1px;
-	height: 0;
-	width: 8vw;
-	border-top: 2px solid #fff;
-}
-.box_title::after {
-	bottom: -1px;
-	right: 0;
-	height: 5vw;
-	width: 0;
-	border-right: 2px solid #fff;
-}
-.box_title span::after {
-	content: '+';
-	position: absolute;
-	top: -0.5em;
-	right: 0.1em;
-	font-size: 7vw;
-	color: #009cff;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+	}
+	&::before {
+		top: 0;
+		left: -1px;
+		height: 0;
+		width: 8vw;
+		border-top: 2px solid $color;
+	}
+	&::after {
+		bottom: -1px;
+		right: 0;
+		height: 5vw;
+		width: 0;
+		border-right: 2px solid $color;
+	}
+	& span::after {
+		content: '+';
+		position: absolute;
+		top: -0.5em;
+		right: 0.1em;
+		font-size: 7vw;
+		color: $color;
+	}
 }
 @media screen and (min-width: $tabletStart) {
 	.box_title {
@@ -535,13 +537,14 @@ h1 {
 	/* font-weight: 500; */
 	letter-spacing: 0.4em;
 	line-height: 2;
-	color: #fff;
+	color: #475066;
 }
 .career_container > p span {
 	display: block;
-	color: #8194c2;
-	font-size: 2.77vw;
+	color: #7f5c97;
+	font-size: 2.6vw;
 	font-weight: 100;
+	white-space: nowrap;
 }
 .career_container > p small {
 	display: block;
@@ -554,14 +557,18 @@ h1 {
 	margin-bottom: 10vw;
 	font-size: 4.44vw;
 	font-weight: 700;
-	color: #fff;
+	color: #7f5c97;
+}
+.career_container > span em {
+	color: #475066;
 }
 .career_container ul li {
 	margin-top: 6vw;
 	font-family: 'NanumSquare';
-	font-size: 3.14vw;
+	font-size: 3.3vw;
 	font-weight: 100;
 	line-height: 2;
+	color: #475066;
 }
 .career_container ul li span {
 	display: block;
