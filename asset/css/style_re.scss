@@ -29,9 +29,9 @@ section {
 .section01 {
 	position: relative;
 	width: 100%;
-	max-height: 1024px;
+	// max-height: 1024px;
 	background: url('../img/section01_bg.jpg') center top no-repeat;
-	background-size: 100%;
+	background-size: 100vw;
 	color: #fff;
 	
 	.layout_center {
@@ -42,7 +42,7 @@ section {
 		background-size: auto;
 
 		.layout_center {
-			height: 834px;
+			height: 829px;
 		}
 	}
 	@media screen and (min-width: 2000px) {
@@ -183,10 +183,16 @@ h1 {
 			bottom: -1vw;
 			left: -42vw;
 			height: 33vw;
+			@media screen and (min-width: $tabletStart) {
+				bottom: -10px;
+				left: -360px;
+				height: 240px;
+			}
 			@media screen and (min-width: $desktopStart) {
-				bottom: -1vw;
-				left: -42vw;
-				height: 33vw;
+				bottom: -10px;
+				left: 50%;
+				height: auto;
+				transform: translateX(-120%);
 			}
 		}
 		// .petal01 {
