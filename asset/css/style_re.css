@@ -56,7 +56,7 @@ section {
 @media screen and (min-width: 768px) {
   .title_contaienr {
     top: 245px;
-    left: 10%;
+    left: 5%;
   }
 }
 
@@ -140,20 +140,6 @@ h1 + small {
   height: 33vw;
 }
 
-.section01 .bg_container .petal01 {
-  position: absolute;
-  top: 32vw;
-  left: 0;
-  width: 21vw;
-}
-
-.section01 .bg_container .petal02 {
-  position: absolute;
-  bottom: 5vw;
-  right: 9vw;
-  width: 9.629vw;
-}
-
 @media screen and (min-width: 1024px) {
   .small_img {
     display: none !important;
@@ -171,36 +157,24 @@ h1 + small {
     top: 0;
     left: 50%;
     bottom: 0;
-    width: 40%;
+    width: auto;
   }
   .section01 .img_conatainer img {
     width: auto;
-    height: 100%;
+    height: 110%;
     margin-top: -20px;
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
   }
   .section01 .bg_container .moon {
     left: 50%;
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
-    top: 62px;
-    width: 495px;
+    -webkit-transform: translateX(-630px);
+            transform: translateX(-630px);
+    top: 40px;
+    width: 540px;
   }
   .section01 .bg_container .left_tree {
     bottom: -1vw;
     left: -42vw;
     height: 33vw;
-  }
-  .section01 .bg_container .petal01 {
-    top: 32vw;
-    left: 0;
-    width: 21vw;
-  }
-  .section01 .bg_container .petal02 {
-    bottom: 5vw;
-    right: 9vw;
-    width: 9.629vw;
   }
 }
 

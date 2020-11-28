@@ -61,7 +61,7 @@ section {
 @media screen and (min-width: $tabletStart) {
 	.title_contaienr {
 		top: 245px;
-		left: 10%;
+		left: 5%;
 	}
 }
 
@@ -145,18 +145,18 @@ h1 {
 			left: -42vw;
 			height: 33vw;
 		}
-		.petal01 {
-			position: absolute;
-			top: 32vw;
-			left: 0;
-			width: 21vw;
-		}
-		.petal02 {
-			position: absolute;
-			bottom: 5vw;
-			right: 9vw;
-			width: 9.629vw;
-		}
+		// .petal01 {
+		// 	position: absolute;
+		// 	top: 32vw;
+		// 	left: 0;
+		// 	width: 21vw;
+		// }
+		// .petal02 {
+		// 	position: absolute;
+		// 	bottom: 5vw;
+		// 	right: 9vw;
+		// 	width: 9.629vw;
+		// }
 		
 	}
 }
@@ -176,38 +176,37 @@ h1 {
 			top: 0;
 			left: 50%;
 			bottom: 0;
-			width: 40%;
+			width: auto;
 
 			img {
 				width: auto;
-				height: 100%;
+				height: 110%;
 				margin-top: -20px;
-				transform: translateX(-200px);
 			}
 		}
 
 		.bg_container {
 			.moon {
 				left: 50%;
-				transform: translateX(-400px);
-				top: 62px;
-				width: 495px;
+				transform: translateX(-630px);
+				top: 40px;
+				width: 540px;
 			}
 			.left_tree {
 				bottom: -1vw;
 				left: -42vw;
 				height: 33vw;
 			}
-			.petal01 {
-				top: 32vw;
-				left: 0;
-				width: 21vw;
-			}
-			.petal02 {
-				bottom: 5vw;
-				right: 9vw;
-				width: 9.629vw;
-			}
+			// .petal01 {
+			// 	top: 32vw;
+			// 	left: 0;
+			// 	width: 21vw;
+			// }
+			// .petal02 {
+			// 	bottom: 5vw;
+			// 	right: 9vw;
+			// 	width: 9.629vw;
+			// }
 		}
 
 
