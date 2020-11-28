@@ -214,6 +214,75 @@ h1 + small {
   }
 }
 
+.section01 .bg_container [class*="petal"] {
+  position: absolute;
+}
+
+.section01 .bg_container .petal01 {
+  top: 32vw;
+  left: 3vw;
+  width: 4vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .section01 .bg_container .petal01 {
+    width: auto;
+    top: 180px;
+    left: 50%;
+    -webkit-transform: translateX(-380px);
+            transform: translateX(-380px);
+  }
+}
+
+.section01 .bg_container .petal02 {
+  bottom: 28vw;
+  left: 12vw;
+  width: 9vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .section01 .bg_container .petal02 {
+    display: none;
+  }
+}
+
+.section01 .bg_container .petal03 {
+  bottom: 2vw;
+  right: 10vw;
+  width: 9vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .section01 .bg_container .petal03 {
+    display: none;
+  }
+}
+
+.section01 .bg_container .petal05,
+.section01 .bg_container .petal04 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .section01 .bg_container .petal05,
+  .section01 .bg_container .petal04 {
+    display: block;
+    width: auto;
+    left: 50%;
+    top: 240px;
+  }
+}
+
+.section01 .bg_container .petal04 {
+  -webkit-transform: translateX(-650px);
+          transform: translateX(-650px);
+}
+
+.section01 .bg_container .petal05 {
+  -webkit-transform: translateX(-600px);
+          transform: translateX(-600px);
+}
+
 /* Section02 */
 .section02 {
   padding: 16.38vw 0 8vw;

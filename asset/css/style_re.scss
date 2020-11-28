@@ -195,18 +195,55 @@ h1 {
 				transform: translateX(-120%);
 			}
 		}
-		// .petal01 {
-		// 	position: absolute;
-		// 	top: 32vw;
-		// 	left: 0;
-		// 	width: 21vw;
-		// }
-		// .petal02 {
-		// 	position: absolute;
-		// 	bottom: 5vw;
-		// 	right: 9vw;
-		// 	width: 9.629vw;
-		// }
+		[class*="petal"] {
+			position: absolute;
+		}
+		.petal01 {
+			top: 32vw;
+			left: 3vw;
+			width: 4vw;
+			@media screen and (min-width: $desktopStart) {
+				width: auto;
+				top: 180px;
+				left: 50%;
+				transform: translateX(-380px);
+			}
+		}
+	
+		.petal02 {
+			bottom: 28vw;
+			left: 12vw;
+			width: 9vw;
+			@media screen and (min-width: $desktopStart) {
+				display: none;
+			}
+		}
+		.petal03 {
+			bottom: 2vw;
+			right: 10vw;
+			width: 9vw;
+			@media screen and (min-width: $desktopStart) {
+				display: none;
+			}
+		}
+
+		.petal05,
+		.petal04 {
+			display: none;
+			@media screen and (min-width: $desktopStart) {
+				display: block;
+				width: auto;
+				left: 50%;
+				top: 240px;
+			}
+		}
+		.petal04 {
+			transform: translateX(-650px);
+		}
+		.petal05 {
+			transform: translateX(-600px);
+		}
+
 
 	}
 }
