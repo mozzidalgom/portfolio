@@ -724,7 +724,7 @@ h1 {
 }
 
 .section03 h2 span {
-	color: #fff;
+	color: #855e9a;
 }
 .section03 .layout_center > p {
 	margin-top: 2em;
@@ -937,7 +937,7 @@ h1 {
 }
 .list_project li:nth-child(1) .box_title span::after,
 .list_project li:nth-child(1) .project_tit_box a + span {
-	color: #8194c2;
+	color: #009cff;
 }
 
 
@@ -967,7 +967,16 @@ h1 {
 }
 
 .list_project .box_title {
+	$color: #fff;
 	margin-bottom: 11.3vw;
+	border-left: 2px solid $color;
+	border-bottom: 2px solid $color;
+	color: $color;
+	&::after,
+	&::before {
+		border-color: $color;
+	}
+
 }
 .project_tit_box {
 	position: relative;

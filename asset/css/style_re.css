@@ -785,7 +785,7 @@ h1 + small {
 }
 
 .section03 h2 span {
-  color: #fff;
+  color: #855e9a;
 }
 
 .section03 .layout_center > p {
@@ -1015,7 +1015,7 @@ h1 + small {
 
 .list_project li:nth-child(1) .box_title span::after,
 .list_project li:nth-child(1) .project_tit_box a + span {
-  color: #8194c2;
+  color: #009cff;
 }
 
 .list_project li:nth-child(2) .contribution span,
@@ -1050,6 +1050,13 @@ h1 + small {
 
 .list_project .box_title {
   margin-bottom: 11.3vw;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.list_project .box_title::after, .list_project .box_title::before {
+  border-color: #fff;
 }
 
 .project_tit_box {
