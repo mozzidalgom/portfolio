@@ -720,6 +720,31 @@ h1 + small {
   }
 }
 
+.section02 {
+  position: relative;
+}
+
+.section02 .strength,
+.section02 > .layout_center {
+  position: relative;
+  z-index: 10;
+}
+
+.section02 .bg_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.section02 .bg_container .right_tree {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  width: 80vw;
+}
+
 /* Section03 */
 .section03 {
   position: relative;

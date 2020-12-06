@@ -247,15 +247,6 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Section02 */
 .section02 {
 	padding: 16.38vw 0 8vw;
@@ -294,9 +285,7 @@ h1 {
 			padding-top: 10vw; 
 		}
 	}
-}
-@media screen and (min-width: $tabletStart) {
-	.strength {
+	@media screen and (min-width: $tabletStart) {
 		li {
 			position: absolute;
 			margin: 0 !important;
@@ -333,9 +322,7 @@ h1 {
 			}
 		}
 	}
-}
-@media screen and (min-width: $desktopStart) {
-	.strength {
+	@media screen and (min-width: $desktopStart) {
 		li {
 			padding-left: 40px;
 
@@ -414,9 +401,6 @@ h1 {
 		letter-spacing: 0.6em;
 		color: #475066;
 	}
-	// & p span {
-	// 	color: #fff;
-	// }
 }
 @media screen and (min-width: $tabletStart) {
 	.strength li > em {
@@ -439,14 +423,10 @@ h1 {
 	margin-top: 30vw;
 	padding: 10vw 7vw;
 	box-sizing: border-box;
-}
-@media screen and (min-width: $tabletStart) {
-	.career_container {
+	@media screen and (min-width: $tabletStart) {
 		margin-top: 0;
 	}
-}
-@media screen and (min-width: $tabletStart) and (max-width: 1023px) {
-	.career_container {
+	@media screen and (min-width: $tabletStart) and (max-width: 1023px) {
 		position: relative;
 		left: 50%;
 		transform: translateX(-37%);
@@ -661,6 +641,40 @@ h1 {
 		font-size: 14px;
 	}
 }
+
+
+// section02 background style
+.section02 {
+	position: relative;
+
+	.strength,
+	& > .layout_center {
+		position: relative;
+		z-index: 10;
+	}
+
+	.bg_container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	
+		.right_tree {
+			position: absolute;
+			top: -20px;
+			right: -40px;
+			width: 80vw;
+		}
+	}
+}
+
+
+
+
+
+
+
 
 
 
