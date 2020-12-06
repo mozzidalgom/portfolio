@@ -18,22 +18,20 @@ $desktopStart: 1024px;
 		margin: 0 auto;
 	}
 } 
-section {
-	overflow: hidden;
+html, body {
+	overflow-x: hidden;
+	// overflow는 section 개별로 적용해야 함
 }
-
-
-
 
 /* Section01 */
 .section01 {
 	position: relative;
 	width: 100%;
+	overflow: hidden;
 	// max-height: 1024px;
 	background: url('../img/section01_bg_mb.jpg') center top no-repeat;
 	background-size: 100vw;
 	color: #fff;
-	
 	.layout_center {
 		height: 147vw;
 	}
@@ -662,8 +660,8 @@ h1 {
 	
 		.right_tree {
 			position: absolute;
-			top: -20px;
-			right: -40px;
+			top: -50vw;
+			right: -65vw;
 			width: 80vw;
 		}
 	}
@@ -685,6 +683,7 @@ h1 {
 	font-family: 'NanumSquare';
 	/* font-weight: 400; */
 	background-color: #e6d1e2;
+	overflow: hidden;
 }
 
 .section03 h2 {
@@ -917,6 +916,9 @@ h1 {
 
 
 /* Section04 */
+.section04 {
+	overflow: hidden;
+}
 .list_project li {
 	padding: 15vw 0 10vw;
 	box-sizing: border-box;
@@ -1204,6 +1206,7 @@ h1 {
 	align-items: center;
 	height: 50vw;
 	max-height: 440px;
+	overflow: hidden;
 }
 .last_section h2 {
 	font-size: 5.55vw;

@@ -12,14 +12,15 @@ Mobile First Design
   }
 }
 
-section {
-  overflow: hidden;
+html, body {
+  overflow-x: hidden;
 }
 
 /* Section01 */
 .section01 {
   position: relative;
   width: 100%;
+  overflow: hidden;
   background: url("../img/section01_bg_mb.jpg") center top no-repeat;
   background-size: 100vw;
   color: #fff;
@@ -740,8 +741,8 @@ h1 + small {
 
 .section02 .bg_container .right_tree {
   position: absolute;
-  top: -20px;
-  right: -40px;
+  top: -50vw;
+  right: -65vw;
   width: 80vw;
 }
 
@@ -752,6 +753,7 @@ h1 + small {
   font-family: 'NanumSquare';
   /* font-weight: 400; */
   background-color: #e6d1e2;
+  overflow: hidden;
 }
 
 .section03 h2 {
@@ -998,6 +1000,10 @@ h1 + small {
 }
 
 /* Section04 */
+.section04 {
+  overflow: hidden;
+}
+
 .list_project li {
   padding: 15vw 0 10vw;
   -webkit-box-sizing: border-box;
@@ -1334,6 +1340,7 @@ h1 + small {
           align-items: center;
   height: 50vw;
   max-height: 440px;
+  overflow: hidden;
 }
 
 .last_section h2 {
