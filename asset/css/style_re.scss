@@ -297,8 +297,8 @@ h1 {
 				left: 5%;
 				margin-left: 0;
 				& > span:empty {
-					height: 430px;
-					top: -445px;
+					height: 200px;
+					top: -210px;
 					left: 6px;
 				}
 			}
@@ -306,8 +306,8 @@ h1 {
 				top: 400px;
 				left: 42%;
 				& > span:empty {
-					height: 600px;
-					top: -615px;
+					height: 390px;
+  			  top: -400px;
 					left: 6px;
 				}
 			}
@@ -315,8 +315,8 @@ h1 {
 				top: 90px;
 				left: 66%;
 				& > span:empty {
-					height: 300px;
-					top: -315px;
+					height: 80px;
+  			  top: -90px;
 					left: 6px;
 				}
 			}
@@ -330,22 +330,25 @@ h1 {
 				top: 290px;
 				left: 10%;
 				& > span:empty {
-					top: -340px;
+					height: 370px;
+					top: -290px;
 					left: 0;
 				}
 			}
 			&:nth-child(2) {
 				top: 520px;
-				left: 45%;
+				left: 43%;
 				& > span:empty {
-					top: -530px;
+					height: 610px;
+					top: -520px;
 					left: 0;
 				}
 			}
 			&:nth-child(3) {
 				top: 200px;
 				& > span:empty {
-					top: -210px;
+					height: 310px;
+					top: -200px;
 					left: 0;
 				}
 			}
@@ -651,6 +654,10 @@ h1 {
 	& > .layout_center {
 		position: relative;
 		z-index: 10;
+
+		@media screen and (min-width: $tabletStart) {
+			position: static;
+		}
 	}
 
 	.bg_container {
@@ -730,7 +737,11 @@ h1 {
 			top: 380vw;
 			left: 70vw;
 		}
-
+		@media screen and (min-width: $tabletStart) {
+			[class*="pearl"] {
+				display: none;
+			}
+		}
 	}
 }
 
