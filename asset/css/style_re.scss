@@ -451,7 +451,7 @@ h1 {
 	$color: #7e5b96;
 	position: relative;
 	display: block;
-	width: 45%;
+	width: 50%;
 	padding: 4vw 0;
 	border-left: 2px solid $color;
 	border-bottom: 2px solid $color;
@@ -660,7 +660,7 @@ h1 {
 		left: 0;
 		bottom: 0;
 	
-		.right_tree {
+		.top_right_tree {
 			position: absolute;
 			top: -50vw;
 			right: -65vw;
@@ -708,6 +708,27 @@ h1 {
 			width: 40vw;
 			top: 170vw;
 			right: -15vw;
+		}
+		.right_tree {
+			position: absolute;
+			width: 60vw;
+			top: 200vw;
+			right: -27vw;
+		}
+		.pearl_09 {
+			width: 4vw;
+			top: 320vw;
+			left: 25vw;
+		}
+		.pearl_10 {
+			width: 18vw;
+			top: 330vw;
+			left: 25vw;
+		}
+		.pearl_11 {
+			width: 38vw;
+			top: 380vw;
+			left: 70vw;
 		}
 
 	}
@@ -1026,6 +1047,7 @@ h1 {
 	color: #fc5201;
 }
 .list_project .box_title {
+	width: 45%;
 	$color: #fff;
 	margin-bottom: 11.3vw;
 	border-left: 2px solid $color;

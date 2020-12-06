@@ -508,7 +508,7 @@ h1 + small {
 .box_title {
   position: relative;
   display: block;
-  width: 45%;
+  width: 50%;
   padding: 4vw 0;
   border-left: 2px solid #7e5b96;
   border-bottom: 2px solid #7e5b96;
@@ -739,7 +739,7 @@ h1 + small {
   bottom: 0;
 }
 
-.section02 .bg_container .right_tree {
+.section02 .bg_container .top_right_tree {
   position: absolute;
   top: -50vw;
   right: -65vw;
@@ -796,6 +796,31 @@ h1 + small {
   width: 40vw;
   top: 170vw;
   right: -15vw;
+}
+
+.section02 .bg_container .right_tree {
+  position: absolute;
+  width: 60vw;
+  top: 200vw;
+  right: -27vw;
+}
+
+.section02 .bg_container .pearl_09 {
+  width: 4vw;
+  top: 320vw;
+  left: 25vw;
+}
+
+.section02 .bg_container .pearl_10 {
+  width: 18vw;
+  top: 330vw;
+  left: 25vw;
+}
+
+.section02 .bg_container .pearl_11 {
+  width: 38vw;
+  top: 380vw;
+  left: 70vw;
 }
 
 /* Section03 */
@@ -1132,6 +1157,7 @@ h1 + small {
 }
 
 .list_project .box_title {
+  width: 45%;
   margin-bottom: 11.3vw;
   border-left: 2px solid #fff;
   border-bottom: 2px solid #fff;
