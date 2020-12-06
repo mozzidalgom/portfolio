@@ -5,15 +5,15 @@ Mobile First Design
 @media screen and (min-width: $desktopStart) { Laptop, Desktop  start} 
 @media screen and (min-width: 1200px) { Section03 Desktop control} 
 */
+.main {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 1024px) {
   .layout_center {
     width: 1024px;
     margin: 0 auto;
   }
-}
-
-html, body {
-  overflow-x: hidden;
 }
 
 /* Section01 */

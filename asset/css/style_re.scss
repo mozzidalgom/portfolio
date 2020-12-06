@@ -11,17 +11,19 @@ $desktopStart: 1024px;
 
 
 
-
+.main {
+	// .main대신 body, html에 직접 적용해도 된다.
+	overflow-x: hidden;
+	// overflow는 section 개별로 적용해야 함
+}
 @media screen and (min-width: $desktopStart) {
 	.layout_center {
 		width: $desktopStart;
 		margin: 0 auto;
 	}
 } 
-html, body {
-	overflow-x: hidden;
-	// overflow는 section 개별로 적용해야 함
-}
+
+
 
 /* Section01 */
 .section01 {
