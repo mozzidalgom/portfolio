@@ -110,7 +110,7 @@ h1 + small {
 
 .section01 .img_conatainer {
   position: absolute;
-  top: 27%;
+  top: 23%;
   left: 22%;
   width: 120%;
 }
@@ -248,7 +248,7 @@ h1 + small {
 }
 
 .section01 .bg_container .petal03 {
-  bottom: 2vw;
+  bottom: 6vw;
   right: 15vw;
   width: 9vw;
 }
@@ -744,6 +744,58 @@ h1 + small {
   top: -50vw;
   right: -65vw;
   width: 80vw;
+}
+
+.section02 .bg_container [class*="pearl"] {
+  position: absolute;
+}
+
+.section02 .bg_container .pearl_01 {
+  width: 4vw;
+  top: -4vw;
+  right: 16vw;
+}
+
+.section02 .bg_container .pearl_02 {
+  width: 5vw;
+  top: -4vw;
+  left: 6vw;
+}
+
+.section02 .bg_container .pearl_03 {
+  width: 18vw;
+  top: 4vw;
+  right: -3vw;
+}
+
+.section02 .bg_container .pearl_04 {
+  width: 38vw;
+  top: 18vw;
+  left: -2vw;
+}
+
+.section02 .bg_container .pearl_05 {
+  width: 2vw;
+  top: 137vw;
+  left: 54vw;
+}
+
+.section02 .bg_container .pearl_06 {
+  width: 5vw;
+  top: 140vw;
+  left: 80vw;
+}
+
+.section02 .bg_container .pearl_07 {
+  width: 10vw;
+  top: 141vw;
+  left: 35vw;
+}
+
+.section02 .bg_container .pearl_08 {
+  width: 40vw;
+  top: 170vw;
+  right: -15vw;
 }
 
 /* Section03 */
