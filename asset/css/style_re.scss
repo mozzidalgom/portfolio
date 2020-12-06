@@ -288,6 +288,7 @@ h1 {
 	@media screen and (min-width: $tabletStart) {
 		li {
 			position: absolute;
+			z-index: 10;
 			margin: 0 !important;
 			padding-top: 0 !important;
 			padding-left: 0;
@@ -419,7 +420,19 @@ h1 {
 		letter-spacing: 0.6em;
 	}
 }
-
+.strength li:nth-child(2) {
+	.br_helper {
+		display: none;
+		@media screen and (min-width: $desktopStart) {
+			display: block;
+		}
+	}
+	p br:nth-of-type(5),
+	p br:nth-of-type(3),
+	p br:nth-of-type(1) {
+		display: none;
+	}
+}
 
 
 .career_container {
@@ -660,6 +673,7 @@ h1 {
 		}
 	}
 
+	// pearls & trees
 	.bg_container {
 		position: absolute;
 		top: 0;
@@ -675,26 +689,53 @@ h1 {
 		}
 		[class*="pearl"] {
 			position: absolute;
+			@media screen and (min-width: $tabletStart) {
+				display: none;
+			}
 		}
 		.pearl_01 {
 			width: 4vw;
 			top: -4vw;
 			right: 16vw;
+			@media screen and (min-width: $tabletStart) {
+				display: block;
+				width: 30px;
+				top: -1%;
+				left: 55%;
+			}
 		}
 		.pearl_02 {
 			width: 5vw;
 			top: -4vw;
 			left: 6vw;
+			@media screen and (min-width: $tabletStart) {
+				display: block;
+				width: 40px;
+				top: 10px;
+				left: -10px;
+			}
 		}
 		.pearl_03 {
 			width: 18vw;
 			top: 4vw;
 			right: -3vw;
+			@media screen and (min-width: $tabletStart) {
+				display: block;
+				width: 140px;
+				top: 100px;
+				left: 57%;
+			}
 		}
 		.pearl_04 {
 			width: 38vw;
 			top: 18vw;
 			left: -2vw;
+			@media screen and (min-width: $tabletStart) {
+				display: block;
+				width: 200px;
+				top: 200px;
+				left: 5%;
+			}
 		}
 		.pearl_05 {
 			width: 2vw;
@@ -721,6 +762,9 @@ h1 {
 			width: 60vw;
 			top: 200vw;
 			right: -27vw;
+			@media screen and (min-width: $tabletStart) {
+				display: none;
+			}
 		}
 		.pearl_09 {
 			width: 4vw;
@@ -736,10 +780,59 @@ h1 {
 			width: 38vw;
 			top: 380vw;
 			left: 70vw;
+			@media screen and (min-width: $tabletStart) {
+				display: block;
+				left: auto;
+				width: 300px;
+				top: 500px;
+				right: -50px;
+			}
 		}
-		@media screen and (min-width: $tabletStart) {
-			[class*="pearl"] {
-				display: none;
+	}
+
+	// petals
+	.bg_container {
+		[class*="petal"] {
+			position: absolute;
+			z-index: 1;
+		}
+		.petal_01 {
+			width: 15vw;
+			bottom: -15vw;
+			left: 10vw;
+			@media screen and (min-width: $tabletStart) {
+				width: 100px;
+				bottom: -8%;
+				left: 29%;
+			}
+			@media screen and (min-width: $desktopStart) {
+				width: 138px;
+			}
+		}
+		.petal_02 {
+			width: 5vw;
+			bottom: -35vw;
+			left: 70vw;
+			@media screen and (min-width: $tabletStart) {
+				width: 70px;
+				bottom: -5%;
+				left: 70%;
+			}
+			@media screen and (min-width: $desktopStart) {
+				width: 113px;
+			}
+		}
+		.petal_03 {
+			width: 2vw;
+			bottom: -20vw;
+			right: 10vw;
+			@media screen and (min-width: $tabletStart) {
+				width: 20px;
+				bottom: -10%;
+				right: 5%;
+			}
+			@media screen and (min-width: $desktopStart) {
+				width: 30px;
 			}
 		}
 	}
@@ -768,14 +861,14 @@ h1 {
 	position: relative;
 	z-index: 1;
 	margin-bottom: 1.5em;
-	padding-left: 13.881vw;
+	padding-left: 5vw;
 	font-size: 10.926vw;
 }
 .section03 h2 small:first-of-type:empty {
 	display: block;
 	position: absolute;
-	top: -7vw;
-	left: 3vw;
+	top: -8vw;
+	left: -4vw;
 	width: 9.72vw;
 	height: 9.72vw;
 	background: url('../img/section03_tit_mark.png') center center no-repeat;
@@ -899,7 +992,7 @@ h1 {
 	font-size: 1.851vw; 
 	font-weight: 100;
 	letter-spacing: 0.4em;
-	color: #656565;
+	color: #8194c2;
 	transform: rotate(90deg);
 	transform-origin: top right;
 }
