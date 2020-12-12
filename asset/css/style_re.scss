@@ -192,7 +192,8 @@ h1 {
 				bottom: -10px;
 				left: 50%;
 				height: auto;
-				transform: translateX(-120%);
+				// transform: translateX(-120%);
+				margin-left: -120%;
 			}
 		}
 		[class*="petal"] {
@@ -206,7 +207,8 @@ h1 {
 				width: auto;
 				top: 180px;
 				left: 50%;
-				transform: translateX(-380px);
+				// transform: translateX(-380px);
+				margin-left: -380px;
 			}
 		}
 	

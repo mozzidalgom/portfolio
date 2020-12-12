@@ -17,8 +17,8 @@
 			{opacity:0, x:50, scale:0.8, rotation:-20}, 
 			{opacity: 1, x:0, rotation:0, scale:1, duration:1.5}, 'moonRised-=1.5')
 		.from('.section01 .img_conatainer', {opacity:0, y:30, duration:1.5}, '-=0.5') 
-		.addLabel('petalStart')
 		.from('.section01 .right_msg', {opacity:0, y:10, duration:1}, '-=0.5')
+		.addLabel('petalStart')
 		.fromTo('.section01 .bg_container .petal01', 
 			{opacity:0, x:-50, y:-20, scale:0.9}, 
 			{opacity:1, x:0, y:0, scale:1, duration:1.5})
