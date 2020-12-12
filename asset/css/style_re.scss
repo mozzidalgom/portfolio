@@ -144,6 +144,7 @@ h1 {
 
 	.right_msg {
 		position: absolute;
+		z-index: 10;
 		top: 84vw;
 		right: 5vw;
 		font-size: 2.59vw;
@@ -153,8 +154,10 @@ h1 {
 		transform: rotate(90deg);
 		transform-origin: top right;
 		@media screen and (min-width: $desktopStart) {
-				top: 70%;
-				font-size: 13px;
+			top: 50%;
+			right: 100px;
+			font-size: 13px;
+			// text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
 		}
 	}
 }
@@ -173,7 +176,8 @@ h1 {
 			width: 85vw;
 			@media screen and (min-width: $desktopStart) {
 				left: 50%;
-				transform: translateX(-630px);
+				// transform: translateX(-630px);
+				margin-left: -650px;
 				top: 40px;
 				width: 540px;
 			}
@@ -193,7 +197,7 @@ h1 {
 				left: 50%;
 				height: auto;
 				// transform: translateX(-120%);
-				margin-left: -120%;
+				margin-left: -1400px;
 			}
 		}
 		[class*="petal"] {
@@ -239,10 +243,12 @@ h1 {
 			}
 		}
 		.petal04 {
-			transform: translateX(-650px);
+			// transform: translateX(-650px);
+			margin-left: -650px;
 		}
 		.petal05 {
-			transform: translateX(-600px);
+			// transform: translateX(-600px);
+			margin-left: -600px;
 		}
 	}
 }
@@ -688,6 +694,12 @@ h1 {
 			top: -50vw;
 			right: -65vw;
 			width: 80vw;
+			@media screen and (min-width: $desktopStart) {
+				width: 827px;
+				right: 50%;
+				margin-right: -1200px;
+				top: -500px;
+			}
 		}
 		[class*="pearl"] {
 			position: absolute;

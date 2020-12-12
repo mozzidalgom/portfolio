@@ -147,6 +147,7 @@ h1 + small {
 
 .section01 .right_msg {
   position: absolute;
+  z-index: 10;
   top: 84vw;
   right: 5vw;
   font-size: 2.59vw;
@@ -161,7 +162,8 @@ h1 + small {
 
 @media screen and (min-width: 1024px) {
   .section01 .right_msg {
-    top: 70%;
+    top: 50%;
+    right: 100px;
     font-size: 13px;
   }
 }
@@ -183,8 +185,7 @@ h1 + small {
 @media screen and (min-width: 1024px) {
   .section01 .bg_container .moon {
     left: 50%;
-    -webkit-transform: translateX(-630px);
-            transform: translateX(-630px);
+    margin-left: -650px;
     top: 40px;
     width: 540px;
   }
@@ -210,8 +211,7 @@ h1 + small {
     bottom: -10px;
     left: 50%;
     height: auto;
-    -webkit-transform: translateX(-120%);
-            transform: translateX(-120%);
+    margin-left: -1400px;
   }
 }
 
@@ -230,8 +230,7 @@ h1 + small {
     width: auto;
     top: 180px;
     left: 50%;
-    -webkit-transform: translateX(-380px);
-            transform: translateX(-380px);
+    margin-left: -380px;
   }
 }
 
@@ -275,13 +274,11 @@ h1 + small {
 }
 
 .section01 .bg_container .petal04 {
-  -webkit-transform: translateX(-650px);
-          transform: translateX(-650px);
+  margin-left: -650px;
 }
 
 .section01 .bg_container .petal05 {
-  -webkit-transform: translateX(-600px);
-          transform: translateX(-600px);
+  margin-left: -600px;
 }
 
 /* Section02 */
@@ -771,6 +768,15 @@ h1 + small {
   top: -50vw;
   right: -65vw;
   width: 80vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .section02 .bg_container .top_right_tree {
+    width: 827px;
+    right: 50%;
+    margin-right: -1200px;
+    top: -500px;
+  }
 }
 
 .section02 .bg_container [class*="pearl"] {
