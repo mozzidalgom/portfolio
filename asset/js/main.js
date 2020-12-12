@@ -8,7 +8,7 @@
 	section01_TL
 		.from('.section01 h1 small, .section01 h1 span, .section01 .title_contaienr > small',
 			{stagger:0.2, duration:1, opacity:0, y:10}, 1.2)
-		.from('.section01 .bg_container .moon', {opacity:0, y:30, duration:2.5}, 0.5) 
+		.from('.section01 .bg_container .moon', {opacity:0, y:30, duration:2.5}, 0) 
 		.addLabel('moonRised')
 		.fromTo('.section01 .bg_container .left_tree', 
 			{opacity:0, y:5, scale:0.9, rotation:5, transformOrigin:'left bottom'}, 
@@ -16,7 +16,7 @@
 		.fromTo('.section02 .bg_container .top_right_tree', 
 			{opacity:0, x:50, scale:0.8, rotation:-20}, 
 			{opacity: 1, x:0, rotation:0, scale:1, duration:1.5}, 'moonRised-=1.5')
-		.from('.section01 .img_conatainer', {opacity:0, y:30, duration:1.5}, '-=1') 
+		.from('.section01 .img_conatainer', {opacity:0, y:30, duration:1.5}, '-=0.5') 
 		.addLabel('petalStart')
 		.from('.section01 .right_msg', {opacity:0, y:10, duration:1}, '-=0.5')
 		.fromTo('.section01 .bg_container .petal01', 
@@ -28,7 +28,6 @@
 		.fromTo('.section01 .bg_container .petal03', 
 			{opacity:0, x:50, y:-50, scale:0.9}, 
 			{opacity:1, x:0, y:0, scale:1, duration:2}, 'petalStart+=0.4')
-		
 		;
 
 	// // Section02 Animation
