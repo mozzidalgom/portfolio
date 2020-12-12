@@ -439,6 +439,7 @@ h1 + small {
 }
 
 .strength li > em {
+  display: block;
   line-height: 3;
   font-size: 3.8vw;
   font-weight: 900;
@@ -682,7 +683,7 @@ h1 + small {
 @media screen and (min-width: 1024px) {
   .career_container > p {
     position: absolute;
-    top: 45%;
+    top: 71%;
     right: 59%;
     margin: 0;
   }
@@ -1337,6 +1338,7 @@ h1 + small {
 
 @media screen and (min-width: 768px) {
   .list_project .box_title {
+    width: 205px;
     margin-bottom: 50px;
   }
   .project_tit_box {

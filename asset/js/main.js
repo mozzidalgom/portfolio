@@ -43,40 +43,42 @@
 			{opacity:1, x:0, y:0, scale:1, duration:2}, 'petalStart+=0.9')
 		;
 
-	// // Section02 Animation
-	// var section02_01_TL = gsap.timeline({
-	// 	scrollTrigger: {
-	// 		// markers: true,
-	// 		trigger: '.section02',
-	// 		// start: 'top 80%',
-	// 		toggleActions: 'restart none none none'
-	// 	}
-	// });
-	// section02_01_TL
-	// 	.from('.strength li > span', {stagger: 0.2, duration: 1.5, opacity: 0})
-	// 	.from('.strength li > span', {stagger: 0.1, duration: 1, y: -100}, 0)
-	// 	.from('.strength li > em', {stagger: 0.2, duration: 1.5, opacity: 0, x: +200}, 0.5) // x 값이 적용이 안되는것 같은디..
-	// 	.from('.strength li > p', {stagger: 0.2, duration: 1, opacity: 0, x: 20}, 1)
-	// 	;
+	// Section02 Animation
+	var section02_01_TL = gsap.timeline({
+		scrollTrigger: {
+			// markers: true,
+			trigger: '.section02',
+			start: 'top 50%',
+			toggleActions: 'restart none none reverse' 
+			//toggleActions(onEnter, onLeave, onEnterBack, onLeaveBack)
+			// actions: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+		}
+	});
+	section02_01_TL
+		.from('.strength li > span', {stagger: 0.3, duration: 1, opacity: 0, scaleY:.8})
+		.from('.strength li > span', {stagger: 0.1, duration: 1, y: -100}, 0)
+		.from('.strength li > em', {stagger: 0.2, duration: 1.5, opacity: 0, x:10}, 0.5)
+		.from('.strength li > p', {stagger: 0.2, duration: 1, opacity: 0, x: 20}, 1)
+		;
 	
-	// var section02_02_TL = gsap.timeline({
-	// 	scrollTrigger: {
-	// 		// markers: true,
-	// 		trigger: '.career_container',
-	// 		// start: 'top 90%',
-	// 		toggleActions: 'restart none none none'
-	// 	}
-	// });
-	// section02_02_TL
-	// 	.from('.section02 .box_title', {duration: 1, opacity: 0, y: 20})
-	// 	.from('.section02 .box_title + p', {duration: 0.5, opacity: 0, y: 20}, 0.5)
-	// 	.from('.section02 .box_title + p span', {duration: 0.5, x: -20}, 0.5)
-	// 	.from('.section02 .box_title + p small', {duration: 0.5, x: 20}, 0.5)
-	// 	.from('.section02 .career_container > span', {duration: 0.3, opacity: 0, y: 10}, 1)
-	// 	.from('.section02 .career_container > ul li', {stagger: 0.1, duration: 0.5, opacity: 0, y: 10}, '-=0.2')
-	// 	.from('.section02 .skills dt', {stagger: 0.2, duration: 1, opacity: 0, y: 10}, 1)
-	// 	.from('.section02 .skills dd span', {stagger: 0.1, duration: 0.3, opacity: 0, x: 10}, '-=0.4')
-	// 	;
+	var section02_02_TL = gsap.timeline({
+		scrollTrigger: {
+			// markers: true,
+			trigger: '.career_container',
+			// start: 'top 90%',
+			toggleActions: 'restart none none reset'
+		}
+	});
+	section02_02_TL
+		.from('.section02 .box_title', {duration: 1, opacity: 0, y: 20})
+		.from('.section02 .box_title + p', {duration: 0.5, opacity: 0, y: 20}, 0.5)
+		.from('.section02 .box_title + p span', {duration: 0.5, x: -20}, 0.5)
+		.from('.section02 .box_title + p small', {duration: 0.5, x: 20}, 0.5)
+		.from('.section02 .career_container > span', {duration: 0.3, opacity: 0, y: 10}, 1)
+		.from('.section02 .career_container > ul li', {stagger: 0.1, duration: 0.5, opacity: 0, y: 10}, '-=0.2')
+		.from('.section02 .skills dt', {stagger: 0.2, duration: 1, opacity: 0, y: 10}, 1)
+		.from('.section02 .skills dd span', {stagger: 0.1, duration: 0.3, opacity: 0, x: 10}, '-=0.4')
+		;
 
 
 	// // Section03 Animation

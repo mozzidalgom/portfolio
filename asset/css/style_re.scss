@@ -176,7 +176,6 @@ h1 {
 			width: 85vw;
 			@media screen and (min-width: $desktopStart) {
 				left: 50%;
-				// transform: translateX(-630px);
 				margin-left: -650px;
 				top: 40px;
 				width: 540px;
@@ -196,7 +195,6 @@ h1 {
 				bottom: -10px;
 				left: 50%;
 				height: auto;
-				// transform: translateX(-120%);
 				margin-left: -1400px;
 			}
 		}
@@ -211,7 +209,6 @@ h1 {
 				width: auto;
 				top: 180px;
 				left: 50%;
-				// transform: translateX(-380px);
 				margin-left: -380px;
 			}
 		}
@@ -243,11 +240,9 @@ h1 {
 			}
 		}
 		.petal04 {
-			// transform: translateX(-650px);
 			margin-left: -650px;
 		}
 		.petal05 {
-			// transform: translateX(-600px);
 			margin-left: -600px;
 		}
 	}
@@ -400,6 +395,7 @@ h1 {
 
 .strength li {
 	& > em {
+		display: block;
 		line-height: 3;
 		font-size: 3.8vw;
 		font-weight: 900;
@@ -623,7 +619,7 @@ h1 {
 @media screen and (min-width: $desktopStart) {
 	.career_container > p {
 		position: absolute;
-		top: 45%;
+		top: 71%;
 		right: 59%;
 		margin: 0;
 	}
@@ -1166,14 +1162,14 @@ h1 {
 }
 .list_project .box_title {
 	width: 45%;
-	$color: #fff;
+	$localColor: #fff;
 	margin-bottom: 11.3vw;
-	border-left: 2px solid $color;
-	border-bottom: 2px solid $color;
-	color: $color;
+	border-left: 2px solid $localColor;
+	border-bottom: 2px solid $localColor;
+	color: $localColor;
 	&::after,
 	&::before {
-		border-color: $color;
+		border-color: $localColor;
 	}
 }
 .project_tit_box {
@@ -1186,6 +1182,7 @@ h1 {
 }
 @media screen and (min-width: $tabletStart) {
 	.list_project .box_title {
+		width: 205px;
 		margin-bottom: 50px;
 	}
 	.project_tit_box {
