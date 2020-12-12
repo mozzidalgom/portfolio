@@ -6,22 +6,29 @@
 	var section01_TL = gsap.timeline();
 
 	section01_TL
+		.from('.section01 h1 small, .section01 h1 span, .section01 .title_contaienr > small',
+			{stagger:0.2, duration:1, opacity:0, y:10}, 1.2)
 		.from('.section01 .bg_container .moon', {opacity:0, y:30, duration:2.5}, 0.5) 
 		.addLabel('moonRised')
 		.fromTo('.section01 .bg_container .left_tree', 
-			{opacity:0, y:5, scale:0.9, transformOrigin:'left bottom'}, 
-			{opacity:1, y:0, scale:1, duration:1.5}, 'moonRised-=1.8')
+			{opacity:0, y:5, scale:0.9, rotation:5, transformOrigin:'left bottom'}, 
+			{opacity:1, y:0, scale:1, rotation:0, duration:1.5}, 'moonRised-=1.8')
 		.fromTo('.section02 .bg_container .top_right_tree', 
-			{opacity:0, x:50, scale:0.8, rotation:-10}, 
+			{opacity:0, x:50, scale:0.8, rotation:-20}, 
 			{opacity: 1, x:0, rotation:0, scale:1, duration:1.5}, 'moonRised-=1.5')
-		.from('.section01 h1 small', {opacity:0, y:10, duration:1}, 'moonRised') 
-		.from('.section01 h1 span', {opacity:0, y:10, duration:1}, '-=0.5') 
-		.from('.section01 .title_contaienr > small', {opacity:0, y:10, duration:1}, '-=0.5') 
-		// .fromTo('.section01 .img_conatainer', 
-		// 	{opacity:0, y:50}, 
-		// 	{opacity: 1, y:0, duration:1.5})
-
-		// .fromTo('.section01 .img_container', {opacity: 0, y: 10}, {duration: 1, opacity: 1, y: 0}, 0.2)
+		.from('.section01 .img_conatainer', {opacity:0, y:30, duration:1.5}, '-=1') 
+		.addLabel('petalStart')
+		.from('.section01 .right_msg', {opacity:0, y:10, duration:1}, '-=0.5')
+		.fromTo('.section01 .bg_container .petal01', 
+			{opacity:0, x:-50, y:-20, scale:0.9}, 
+			{opacity:1, x:0, y:0, scale:1, duration:1.5})
+		.fromTo('.section01 .bg_container .petal02', 
+			{opacity:0, x:-30, y:-60, scale:0.9}, 
+			{opacity:1, x:0, y:0, scale:1, duration:1.5}, 'petalStart+=0.2')
+		.fromTo('.section01 .bg_container .petal03', 
+			{opacity:0, x:50, y:-50, scale:0.9}, 
+			{opacity:1, x:0, y:0, scale:1, duration:2}, 'petalStart+=0.4')
+		
 		;
 
 	// // Section02 Animation
