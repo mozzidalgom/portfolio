@@ -55,18 +55,40 @@
 		}
 	});
 	section02_01_TL
-		.from('.strength li > span', {stagger: 0.3, duration: 1, opacity: 0, scaleY:.8})
-		.from('.strength li > span', {stagger: 0.1, duration: 1, y: -100}, 0)
-		.from('.strength li > em', {stagger: 0.2, duration: 1.5, opacity: 0, x:10}, 0.5)
-		.from('.strength li > p', {stagger: 0.2, duration: 1, opacity: 0, x: 20}, 1)
+		.from('.strength li > span', {stagger: .3, duration: 1, opacity: 0, scaleY:.8})
+		.from('.strength li > span', {stagger: .1, duration: 1, y: -100}, 0)
+		.from('.strength li > em', {stagger: .2, duration: 1.5, opacity: 0, x:10}, .5)
+		.from('.strength li > p', {stagger: .2, duration: 1, opacity: 0, x: 20}, 1)
+		// background start
+		.from('.section02 .bg_container > [class*="pearl"]:nth-of-type(-n+9)', {stagger: .2, duration: 1, opacity: 0, y: 10}, 0)
 		;
+
+	var section02_01_bg_TL = gsap.timeline({
+		scrollTrigger: {
+			// markers: true,
+			trigger: '.section02',
+			start: 'top 50%',
+			toggleActions: 'restart none none reverse' 
+			//toggleActions(onEnter, onLeave, onEnterBack, onLeaveBack)
+			// actions: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+		}
+	});
+	section02_01_bg_TL
+		.fromTo('.section02 .bg_container > [class*="pearl"]:nth-of-type(-n+9)', 
+			{y: 0}, 
+			{stagger: .3, duration: 2, y: -10}, 2)
+		.fromTo('.section02 .bg_container > [class*="pearl"]:nth-of-type(-n+9)', 
+			{y: -10}, 
+			{stagger: .3, duration: 2, y: 0}, 4)
+		.repeat(-1);
+
 	
 	var section02_02_TL = gsap.timeline({
 		scrollTrigger: {
 			// markers: true,
 			trigger: '.career_container',
 			// start: 'top 90%',
-			toggleActions: 'restart none none reset'
+			toggleActions: 'restart none none reverse'
 		}
 	});
 	section02_02_TL
@@ -78,7 +100,27 @@
 		.from('.section02 .career_container > ul li', {stagger: 0.1, duration: 0.5, opacity: 0, y: 10}, '-=0.2')
 		.from('.section02 .skills dt', {stagger: 0.2, duration: 1, opacity: 0, y: 10}, 1)
 		.from('.section02 .skills dd span', {stagger: 0.1, duration: 0.3, opacity: 0, x: 10}, '-=0.4')
+		// background start
+		.from('.section02 .bg_container .right_tree', {duration: 2, opacity: 0, scale: .5, rotation:-15, transformOrigin:'right bottom'}, .5)
+		.from('.section02 .bg_container > [class*="pearl"]:nth-of-type(n+10)', {stagger: .2, duration: 1, opacity: 0, y: 10}, 1)
 		;
+	
+		var section02_02_bg_TL = gsap.timeline({
+			scrollTrigger: {
+				// markers: true,
+				trigger: '.career_container',
+				// start: 'top 90%',
+				toggleActions: 'restart none none reverse'
+			}
+		});
+		section02_02_bg_TL
+			.fromTo('.section02 .bg_container > [class*="pearl"]:nth-of-type(n+10)', 
+				{y: 0}, 
+				{stagger: .3, duration: 2, y: -10}, 2)
+			.fromTo('.section02 .bg_container > [class*="pearl"]:nth-of-type(n+10)', 
+				{y: -10}, 
+				{stagger: .3, duration: 2, y: 0}, 4)
+			.repeat(-1);
 
 
 	// // Section03 Animation
