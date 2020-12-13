@@ -1508,7 +1508,17 @@ h1 {
 
 
 /* Animatino help style */
-// 
+// section01
+.section02 .bg_container > [class*="pearl"]:nth-of-type(-n+9),
+.section02 .bg_container .top_right_tree,
+.section01 .bg_container > *,
+.section01 .right_msg,
+.section01 .img_conatainer,
+h1 + small,
+h1 > span,
+h1 > small {
+	opacity: 0;
+}
 
 
 
