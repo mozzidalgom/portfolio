@@ -1059,6 +1059,11 @@ h1 + small {
   font-weight: 800;
 }
 
+.section03 .layout_center > p:last-of-type {
+  margin-top: 3em;
+  font-size: 4.2vw;
+}
+
 @media screen and (min-width: 768px) {
   .section03 .layout_center {
     position: relative;
@@ -1072,6 +1077,11 @@ h1 + small {
   }
   .section03 .layout_center > p:nth-of-type(2n) {
     left: 50%;
+  }
+  .section03 .layout_center > p:last-of-type {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
   }
 }
 
@@ -1103,9 +1113,6 @@ h1 + small {
   .section03 .layout_center > p:last-of-type {
     top: -150px;
     left: 40%;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
   }
   .section03 .layout_center > p:last-of-type br:nth-of-type(1),
   .section03 .layout_center > p:last-of-type br:nth-of-type(3) {
@@ -1171,8 +1178,8 @@ h1 + small {
 
 .section03 .bg_container .line_3 {
   width: 90%;
-  bottom: -120%;
-  right: -55%;
+  bottom: -140%;
+  right: -50%;
 }
 
 .section03 .bg_container .line_3::before {
@@ -1181,8 +1188,8 @@ h1 + small {
 
 .section03 .bg_container .box {
   position: absolute;
-  right: 10vw;
-  bottom: -180vw;
+  right: 13vw;
+  bottom: -190vw;
   display: block;
   width: 10vw;
   height: 10vw;
@@ -1226,6 +1233,12 @@ h1 + small {
   .section03 .bg_container .line_3::before {
     border-width: 10px;
   }
+  .section03 .bg_container .box {
+    bottom: -50px;
+    right: -70px;
+    width: 118px;
+    height: 118px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1237,12 +1250,6 @@ h1 + small {
   }
   .section03 .bg_container .line_2 {
     top: 12%;
-  }
-  .section03 .bg_container .box {
-    bottom: -50px;
-    right: -70px;
-    width: 118px;
-    height: 118px;
   }
 }
 
