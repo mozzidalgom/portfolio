@@ -165,7 +165,7 @@
 	
 	var section04_01_eventList_TL = gsap.timeline({
 		scrollTrigger: {
-			markers: true,
+			// markers: true,
 			trigger: '.section04 .event_list > a',
 			start: 'top 60%',
 			toggleActions: 'restart none none reverse',
@@ -182,7 +182,7 @@
 
 	var section04_02_TL = gsap.timeline({
 		scrollTrigger: {
-			// markers: true,
+			markers: true,
 			trigger: '.section04 .list_project > li:nth-child(2)',
 			start: 'top 60%',
 			toggleActions: 'restart none none reverse',

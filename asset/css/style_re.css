@@ -1558,8 +1558,7 @@ h1 + small {
     top: 50%;
     right: 0;
     width: 60%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    margin-top: -210px;
   }
   .list_project li.is_type_mb {
     padding-bottom: 80px;
@@ -1574,6 +1573,7 @@ h1 + small {
 @media screen and (min-width: 1024px) {
   .list_project li.is_type_mb .prview {
     max-width: 680px;
+    margin-top: -290px;
   }
   .list_project li.is_type_mb .prview img {
     max-height: 610px;
@@ -1689,4 +1689,6 @@ h1 + small {
     height: 64px;
   }
 }
+
+/* Animatino help style */
 /*# sourceMappingURL=style_re.css.map */
