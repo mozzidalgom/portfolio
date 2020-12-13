@@ -996,7 +996,8 @@ h1 {
 .section03 .bg_container::after {
 	content: 'CREATIVE & PERFORMANCE DESIGNER';
 	position: absolute;
-	top: 83vw;
+	z-index: 5;
+	top: 94vw;
 	right: 5vw;
 	/* font-family: 'Noto Sans KR'; */
 	font-size: 1.851vw; 
@@ -1026,14 +1027,33 @@ h1 {
 .section03 .bg_container .line_2 {
 	width: 200%;
 	top: 10%;
-	left: -46%;
+	left: -55%;
 }
 .section03 .bg_container .line_2::before {
 	border-width: 32vw;
 }
-.section03 .bg_container .box,
+// .section03 .bg_container .box,
+// .section03 .bg_container .line_3 {
+// 	display: none;
+// }
 .section03 .bg_container .line_3 {
-	display: none;
+	width: 90%;
+	bottom: -120%;
+	right: -55%;
+	
+}
+.section03 .bg_container .line_3::before {
+	border-width: 1vw;
+}
+.section03 .bg_container .box {
+	position: absolute;
+	right: 10vw;
+	bottom: -180vw;
+	display: block;
+	width: 10vw;
+	height: 10vw;
+	background: url('../img/section03_tit_mark_big.png') center center no-repeat;
+	background-size: contain;
 }
 @media screen and (min-width: $tabletStart) {
 	.section03 .bg_container {
@@ -1042,7 +1062,7 @@ h1 {
 		height: 100%;
 	}
 	.section03 .bg_container::after {
-		top: 220px;
+		top: 290px;
 		right: -10px;
 		font-size: 13px;
 	}
@@ -1083,14 +1103,10 @@ h1 {
 		top: 12%;
 	}
 	.section03 .bg_container .box {
-		position: absolute;
 		bottom: -50px;
 		right: -70px;
-		display: block;
 		width: 118px;
 		height: 118px;
-		background: url('../img/section03_tit_mark_big.png') center center no-repeat;
-		background-size: contain;
 	}
 }
 
