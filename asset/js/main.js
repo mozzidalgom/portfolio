@@ -20,13 +20,13 @@ setTimeout(
 			.fromTo('.section01 .img_conatainer',
 				{opacity:0, y:30},
 				{opacity:1, y:0, duration:1.5}, '-=.8')
+			.addLabel('petalStart')
 			.fromTo('.section01 h1 small, .section01 h1 span, .section01 .title_contaienr > small',
 				{opacity:0, y:10},
 				{stagger:0.2, opacity:1, y:0, duration:1}, '-=.5')
 			.fromTo('.section01 .right_msg', 
 				{opacity:0, y:10},
 				{opacity:1, y:0, duration:1}, '-=.5')
-			.addLabel('petalStart')
 			.fromTo('.section01 .bg_container .petal01', 
 				{opacity:0, x:-50, y:-20, scale:0.9}, 
 				{opacity:1, x:0, y:0, scale:1, duration:1.5}, 'petalStart-=.5')
@@ -37,11 +37,11 @@ setTimeout(
 				{opacity:0, x:50, y:-50, scale:0.9}, 
 				{opacity:1, x:0, y:0, scale:1, duration:2}, 'petalStart+=1')
 			.fromTo('.section01 .bg_container .petal04', 
-				{opacity:0, x:-50, y:-50, scale:0.9}, 
-				{opacity:1, x:0, y:0, scale:1, duration:2}, 'petalStart+=0.3')
+				{opacity:0, x:-60, y:-80, scale:0.9}, 
+				{opacity:1, x:0, y:0, scale:1, duration:2}, 'petalStart+=1')
 			.fromTo('.section01 .bg_container .petal05', 
-				{opacity:0, x:30, y:-50, scale:0.9}, 
-				{opacity:1, x:0, y:0, scale:1, duration:2}, 'petalStart+=0.9')
+				{opacity:0, x:30, y:-90, scale:0.9}, 
+				{opacity:1, x:0, y:0, scale:1, duration:1}, 'petalStart+=0.3')
 			;
 	
 		// Section02 Animation
@@ -144,9 +144,9 @@ setTimeout(
 			.from('.section03 .bg_container .line_1', {duration: 1, scale: 0 , x: 1000, y: -1000}, 0.5)
 			.from('.section03 .bg_container .line_2', {duration: 1, scale: 0 , x: -2000, y: 2000}, 0.5)
 			.from('.section03 .bg_container .line_3', {duration: 1, scale: 0 , x: 1000, y: -1000}, 0.5)
-			.from('.section02 .bg_container .petal_01', {duration: 2, opacity: 0 , x: -30, y: -40}, 1.5)
-			.from('.section02 .bg_container .petal_02', {duration: 2, opacity: 0 , x: 40, y: -90}, '-=1.5')
-			.from('.section02 .bg_container .petal_03', {duration: 2, opacity: 0 , x: 20, y: -70}, '-=1.5')
+			.from('.section02 .bg_container .petal_01', {duration: 2, opacity: 0 , x: -50, y: -120}, 1.5)
+			.from('.section02 .bg_container .petal_02', {duration: 2, opacity: 0 , x: 60, y: -150}, '-=1.5')
+			.from('.section02 .bg_container .petal_03', {duration: 2, opacity: 0 , x: 40, y: -140}, '-=1.5')
 			;
 		
 	
